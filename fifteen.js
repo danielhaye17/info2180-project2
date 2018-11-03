@@ -304,14 +304,14 @@ window.onload = function()
 	// Used to randomly change the applied background picture
 	function changePic() 
 	{
-		var listOfPics = ["2 Zelda.jpg","neymar-injury.jpg","familyguy.jpg","4 Mario.jpg"];
+		var listOfPics = ["background.jpg","Zelda.jpg","familyguy.jpg","Mario.jpg"];
 		var currentPic = puzzleArea [0].style.backgroundImage.slice(5, -2); // Sliced to remove 'url("")' from it
 		var rndNum = Math.floor(Math.random() * listOfPics.length);
 
 		// Used to set a default picture to go back to whenever the page is refreshed.
 		if (currentPic.length === 0)
 		{
-			currentPic = "2 Zelda.jpg";
+			currentPic = "background.jpg";
 		}
 		
 		// Used to prevent the random number from pointing at the current picture 	
